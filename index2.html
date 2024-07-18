@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Script+Print&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Script Print', cursive;
+        }
+        .about-section, .projects-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .about-section h1, .projects-section h1 {
+            margin-bottom: 30px;
+        }
+        .about-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ccc;
+            margin-bottom: 30px;
+            object-fit: cover;
+        }
+        .about-section p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        /* Additional CSS for Projects Section */
+        .projects-section h2 {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        }
+        .card {
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+        }
+        .card-img-top {
+        max-height: 180px; /* Adjust this value to fit the image properly in the card */
+        object-fit: cover; /* This makes sure the image covers the area properly */
+        }
+        .card-body {
+        padding: 15px;
+        }
+        .card-title {
+        font-size: 1.25rem;
+        }
+        .card-text {
+        margin-bottom: 15px;
+        }
+            /* Additional CSS for Skills Section */
+        .skills-section h2 {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        }
+        .skills-section .card {
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .skills-section .card-img-top {
+        padding: 20px; /* Add padding around your images if needed */
+        background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+        height: 180px; /* Fixed height for consistency */
+        object-fit: contain; /* This will make sure the image is scaled properly within the container */
+        }
+        .skills-section .card-body {
+        padding: 15px;
+        }
+        .skills-section .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 15px;
+        }
+        .skills-section .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+        }
+        .skills-section .btn-outline-primary:hover {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        }        
+    </style>
+</head>
+<body>
+    <!-- About Section -->
+    <section class="about-section">
+        <h1>About</h1>
+        <img src="images/about/about.jpg" alt="Profile Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+        <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+    </section>
+
+    <!-- Seção Projetos --> 
+    <section class="projects-section bg-light" id="projects"> 
+        <div class="container"> 
+            <h2 class="text-center">Projetos</h2> 
+            <div class="row"> 
+                <!-- Projeto 1 --> 
+                <div class="col-md-4 mb-4"> 
+                    <div class="card"> 
+                        <img src="images/projects/1.jpg" class="card-img-top" alt="Projeto 1"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Projeto 1</h5> 
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p> 
+                            <a href="#" class="btn btn-primary">Postagem do blog</a> 
+                            <a href="#" class="btn btn-secondary">Código-fonte</a> 
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- Projeto 2 --> 
+                <div class="col-md-4 mb-4"> 
+                    <div class="card"> 
+                        <img src="images/projects/2.jpg" class="card-img-top" alt="Projeto 2"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Projeto 2</h5> 
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend Tellus ut, fermentum arcu.</p> 
+                            <a href="#" class="btn btn-primary">Postagem do blog</a> 
+                            <a href="#" class="btn btn-secondary">Código-fonte</a> 
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- Projeto 3 --> 
+                <div class="col-md-4 mb-4"> 
+                    <div class="card"> 
+                        <img src="images/projects/3.jpg" class="card-img-top" alt="Projeto 3"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Projeto 3</h5> 
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend Tellus ut, fermentum arcu.</p> 
+                            <a href="#" class="btn btn-primary">Postagem do blog</a> 
+                            <a href="#" class="btn btn-secondary">Código-fonte</a> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section bg-light" id="skills">
+        <div class="container">
+            <h2 class="text-center">Habilidades</h2>
+            <div class="row">
+                <!-- Skill 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/skills/skill1.png" class="card-img-top" alt="Skill 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Habilidade 1</h5>
+                            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/skills/skill2.png" class="card-img-top" alt="Skill 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Habilidade 2</h5>
+                            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/skills/skill3.png" class="card-img-top" alt="Skill 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Habilidade 3</h5>
+                            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção Entre em contato comigo --> 
+    <section  class = "contact-section text-center text-white bg-dark"> 
+        <div  class = "container"> 
+            <h2> Entre em contato comigo</h2> 
+            <div  class = "row"> 
+                <div  class = "col-lg-6"> 
+                    <p><i class = "fas fa-envelope"></i> loremipsum@gmail.com </p> 
+                </div> 
+                <div class = "col-lg-6"> 
+                    <p><i  class = "fas fa-phone"></i>415xxxxxxx</p> 
+                </div> 
+            </div> 
+            <div class = "row"> 
+                <div class = "col-lg-2 col-md-4 mb-4"> 
+                    <a href = "https://linkedin.com/in/seunomedeusuário"  target = "_blank"> 
+                    <img src = "icons/linkedin.png" alt = "LinkedIn" class = "ícone-social">
+                        LinkedIn 
+                    </a> 
+                </div> 
+            <div class = "col-lg-2 col-md-4 mb-4"> 
+                <a href = "https://twitter.com/seunomedeusuário" target = "_blank"> 
+                <img src = "ícones/twitter.png" alt = "Twitter" class = "ícone-social">
+                    Twitter 
+                </a> 
+            </div> 
+            <div class = "col-lg-2 col-md-4 mb-4"> 
+                <a href = "https://github.com/seunomedeusuário"  target = "_blank"> 
+                <img src = "icons/github.png" alt = "GitHub"  class = "ícone-social">
+                    GitHub
+                </a> 
+            </div> 
+            <div class = "col-lg-2 col-md-4 mb-4"> 
+                <a href = "https://medium.com/@seunomedeusuário"  target = "_blank"> 
+                <img src = "icons/medium.png" alt = "Médio" class = "ícone-social">
+                    Médio
+                </a> 
+            </div> 
+            <div class = "col-lg-2 col-md-4 mb-4"> 
+                <a href = "https://youtube.com/c/seucanal" target = "_blank"> 
+                <img src = "icons/youtube.png" alt = "YouTube" class = "ícone-social">
+                    YouTube
+                </a> 
+            </div> 
+        </div> 
+    </div> 
+</section>''
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
